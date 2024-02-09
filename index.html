@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Login Clone Porn</title>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <p class="sign">Sign in your account</p>
+        <div class="social">
+          <div class="same" id="linkedin">
+            <i class="fa-brands fa-linkedin"></i>LinkedIn
+          </div>
+          <div class="same" id="google">
+            <i class="fa-brands fa-google"></i>Google
+          </div>
+          <div class="same" id="facebook">
+            <i class="fa-brands fa-facebook"></i>Facebook
+          </div>
+        </div>
+        <p class="or">or use your email</p>
+        <div class="inputs">
+          <input type="text" placeholder="Your Email" id="mail" />
+          <input type="text" placeholder="Password" id="pass" />
+        </div>
+        <button id="btn">Sign In</button>
+        <strong
+          ><p>
+            <a href="https://onlyfans.com/skybri">Forget your password?</a>
+          </p>
+          <small>First time here?</small>
+          <a href="https://onlyfans.com/breckie">Create an account</a></strong
+        >
+      </div>
+    </section>
+    <script
+      src="https://kit.fontawesome.com/106b140964.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const btn = document.querySelector("#btn");
+      const mailAddress = document.getElementById("mail");
+      const password = document.getElementById("pass");
+      btn.addEventListener("click", () => {
+        if (mailAddress.value) {
+          alert(`Your mail address is: ${mailAddress.value}`);
+        }
+        if (password.value) {
+          alert(`Your password is: ${password.value}`);
+        }
+      });
+    </script>
+  </body>
+</html>
